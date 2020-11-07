@@ -60,6 +60,63 @@
 }
 
 
+.search{
+    min-height: 530px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.search__inner{
+    text-align: center;
+    color: #fff;
+    padding-top: 130px;
+    padding-bottom: 80px;
+    &-title{
+        font-size: 48px;
+        margin-bottom: 30px;
+        font-weight: 700;
+    }
+    &-text{
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+    &-form{
+        max-width: 670px;
+        margin: 0 auto;
+        position: relative;
+        input{
+            display: block;
+            width: 100%;
+            box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
+            border-radius: 4px;
+            height: 56px;
+            border: none;
+            font-size: 14px;
+            font-weight: 500;
+            padding-left: 25px;
+            padding-right: 60px;
+            
+            &::placeholder{
+                color: #90a4ae;
+                font-weight: 500;
+            }
+        }
+        button{
+            position: absolute;
+            border: none;
+            background-color: transparent;
+            right: 16px;
+            top: 18px;
+        }
+    }
+   
+}
+
+
+
+
 
 
 
