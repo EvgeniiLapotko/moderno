@@ -5,7 +5,8 @@ let gulp = require('gulp'),
     browserSync = require('browser-sync'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
-    cssmin = require('gulp-cssmin');
+    cssmin = require('gulp-cssmin'),
+    postcss = require('gulp-postcss');
 
 
 gulp.task('sass', function () {
@@ -13,7 +14,7 @@ gulp.task('sass', function () {
         .pipe(sass({ outputStyle: 'expanded' }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(autoprefixer({
-            overrideBrowsersList: 'last 8 versions'
+            overrideBrowserslist: 'last 25 versions',
         }))
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({ stream: true }))
@@ -33,7 +34,8 @@ gulp.task('style', function () {
 gulp.task('script', function () {
     return gulp.src([
         'node_modules/slick-carousel/slick/slick.js',
-        'node_modules/magnific-popup/dist/jquery.magnific-popup.js'
+        'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
+        'node_modules/mixitup/dist/mixitup.min.js'
     ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())
