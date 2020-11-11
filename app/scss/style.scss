@@ -81,6 +81,7 @@
         font-size: 20px;
         font-weight: 500;
         margin-bottom: 50px;
+        @include f500;
     }
     &-form{
         max-width: 670px;
@@ -95,6 +96,7 @@
             border: none;
             font-size: 14px;
             font-weight: 500;
+            @include f500;
             padding-left: 25px;
             padding-right: 60px;
             outline: none;
@@ -102,6 +104,7 @@
             &::placeholder{
                 color: #90a4ae;
                 font-weight: 500;
+                @include f500;
             }
         }
         button{
@@ -176,6 +179,7 @@
     &-title{
         color: $bg;
         font-weight: 500;
+        @include f500;
         font-size: 18px;
         display: block;
     }
@@ -184,11 +188,13 @@
         color: $green;
         font-size: 14px;
         font-weight: 500;
+        @include f500;
     }
     &-price{
         font-size: 20px;
         color: $bg;
         font-weight: 700;
+        @include f700;
     }
     &-info{
         padding: 10px 30px;
@@ -214,6 +220,7 @@
         span{
             color: #546e7a;
             font-weight: 500;
+            @include f500;
             font-size: 14px;
         }
     }
@@ -222,6 +229,7 @@
             color: $bg;
             font-size: 14px;
             font-weight: 700;
+            @include f700;
         }
         
     }
@@ -277,5 +285,110 @@
     }
 }
 
+.chooice{
+    background-color: $bg;
+    padding: 100px 0;
+    margin-bottom: 5px;
+}
+
+.chooise__title{
+    color: #fff;
+    margin-bottom: 80px;
+}
+
+.chooice__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.chooice__item{
+    max-width: 370px;
+    text-align: center;
+    padding: 0px 15px;
+    &-images{
+        width: 114px;
+        height: 114px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    &-title a{
+        color: #fff;
+        @include f500;
+        margin-bottom: 25px;
+        font-size: 24px;
+        transition: all .3s;
+        &:hover{
+            color: $green;
+        }
+    }
+    &-text{
+        font-size: 15px;
+    }
+}
 
 
+.author{
+    min-height: 750px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.author__inner{
+    background-color: $green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 650px;
+    width: 100%;
+    min-height: 217px;
+    margin: 0 auto;
+    padding: 10px 60px;
+    &-text{
+        font-size: 30px;
+        line-height: 36px;
+        @include f500;
+        max-width: 290px;
+        color: #fff;
+        span{
+            @include f700;
+        }
+    }
+    &-link{
+        font-size: 18px;
+        @include f500;
+        background-color: #fff;
+        padding: 25px 45px;
+    }
+}
+
+.tutorial{
+    padding: 70px 0 120px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        max-width: 370px;
+        width: 100%;
+    }
+}
+
+.tutorial__item{
+    &-img{
+        min-height: 270px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &-title{
+        @include f700;
+        font-size: 24px;
+        color: $bg;
+        text-align: center;
+        padding: 30px 10px;
+
+    }
+}
