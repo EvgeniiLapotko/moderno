@@ -63,3 +63,16 @@ body{
     margin-bottom: 30px;
     @include f700;
 }
+
+.angle-right{
+    position: relative;
+    padding-left: 15px;
+    &::before{
+        content: "\f105";
+        position: absolute;
+        color: $green;
+        font-family: 'icomoon';
+        font-size: 14px;
+        left: 0;
+    }
+}
