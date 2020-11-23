@@ -87,6 +87,7 @@
 }
 
 .bascket{
+    margin-right: 20px;
     & span{
         background-color: $green;
     }
@@ -127,7 +128,6 @@
 }
 
 .user{
-    margin-left: 20px;
     margin-right: 25px;
     padding-right: 20px;
     position: relative;
@@ -338,6 +338,116 @@
     }
 }
 
+.header__btn-menu,
+.menu__btn{
+    display: none;
+}
+
+
+
+
+
+
+
+#modal{
+    background-color: $green;
+    max-width: 730px ;
+    width: 100%;
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+
+.login__title{
+    text-align: center;
+    color: #fff;
+    font-size: 48px;
+    @include f700;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.login__wrapper{
+    form{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    label{
+        position: relative;
+        display: block;
+        width: 100%;
+        &::before{
+            position: absolute;
+            font-family: 'icomoon';
+            font-size: 14px;
+            color: #fff;
+            left: 18px;
+            top: 9px;
+        }
+    }
+    .login__label-name::before{
+        content: "\f007";
+    }
+    .login__label-pass::before{
+        content: "\f023";
+    }
+    input{
+        height: 43px;
+        margin-bottom: 8px;
+        border: none;
+        outline: none;
+        background-color: #76ae36;
+        color: #fff;
+        font-size: 14px;
+        padding-left: 40px;
+        display: block;
+        width: 100%;
+        &::placeholder{
+            color: #fff;
+            font-size: 14px;
+        }
+    }
+    button{
+        margin-top: 19px;
+        width: 140px;
+        font-size: 18px;
+        padding: 18px 0 16px;
+        background-color: #fff;
+        border: none;
+        margin-right: 10px;
+        @include f700;
+        color: #000;
+        text-align: center;
+        text-transform: uppercase;
+        box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 0.75);
+    }
+}
+.lost-pass{
+    display: block;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 18px;
+}
+.create-akk{
+    margin-top: 19px;
+    width: 245px;
+    font-size: 18px;
+    padding: 16px 0 16px 28px;
+    text-align: center;
+    background-color: #76ae36;
+    color: #fff;
+    position: relative;
+    &::before{
+        content: "\f044";
+        position: absolute;
+        font-family: 'icomoon';
+        top: 15px;
+        left: 35px;
+    }
+}
+
+.fancybox-button svg path{
+    fill: #fff;
+}
 
 
 
@@ -840,3 +950,12 @@
         line-height: 36px;
     }
 }
+
+
+
+.margin{
+    margin-bottom: 80px;
+}
+
+
+@import 'media';

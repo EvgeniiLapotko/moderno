@@ -6,6 +6,14 @@ $(function () {
         readOnly: true
     });
 
+    $(".menu__btn").on('click', function () {
+        $(".menu__list").slideToggle();
+    });
+
+    $(".header__btn-menu").on('click', function () {
+        $(".header__box").toggleClass('active');
+    });
+
     var mixer = mixitup('.products__inner-box');
 
     $(".products-slider__inner").slick({
@@ -14,6 +22,7 @@ $(function () {
         dots: true,
         arrows: false
     });
+
 
 
 });
