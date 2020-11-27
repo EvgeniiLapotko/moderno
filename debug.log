@@ -29,3 +29,4 @@
 [1108/121623.177:ERROR:exception_snapshot_win.cc(99)] thread ID 9032 not found in process
 [1118/135400.340:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
 [1122/225154.422:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1127/155721.048:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)

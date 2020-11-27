@@ -1334,4 +1334,200 @@
     }
 }
 
+
+
+
+.page404__wrapper,
+.about__wrapper,
+.contacts__wrapper{
+    border: 1px solid #dcdcdc;
+    background-color: #fff;
+    margin-bottom: 150px;
+}
+.page404__head,
+.about__head,
+.contacts__head{
+    font-size: 24px;
+    color: #444;
+    padding: 23px 27px;
+    @include f500;
+    border-bottom: 1px solid #dcdcdc;
+}
+.page404__inner{
+    background-color: $green;
+    color: #fff;
+    text-align: center;
+}
+
+.page404__404{
+    font-size: 300px;
+    @include f700;
+    padding-top: 70px;
+    line-height: 300px;
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        background-image: url(../img/content/dude.png);
+        width: 157px;
+        height: 301px;
+        margin-left: 15px;
+        top: 35px;
+    }
+}
+
+.page404__title{
+    @include f300;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.page404__text{
+    max-width: 530px;
+    margin: 0 auto;
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+.page404__link{
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    margin-bottom: 100px;
+}
+
+.about__inner{
+    padding: 0 50px;
+}
+
+.about__box{
+    h3{
+        font-size: 20px;
+        @include f700;
+        color: #444;
+        margin-top: 40px;
+        margin-bottom: 15px;
+    }
+    p{
+        margin-bottom: 40px;
+    }
+}
+
+.contacts__head{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.contacts__inner{
+    padding: 35px 40px 15px;
+}
+
+.contacts__map{
+    margin-bottom: 50px;
+    iframe{
+        width: 100%;
+        height: 415px;
+    }
+}
+
+.contacts__box{
+    display: flex;
+}
+
+.contacts__info{
+    margin-right: 30px;
+    max-width: 330px;
+    width: 100%;
+}
+
+.contacts__info-item{
+    margin-bottom: 30px;
+}
+
+.contacts__info-title{
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    position: relative;
+    font-size: 20px;
+    @include f500;
+    color: $bg;
+    padding-left: 40px;
+    &::after{
+        content: '';
+        width: 44px;
+        height: 4px;
+        background-color: $green;
+        position: absolute;
+        bottom: 0;
+        left: 40px;
+    }
+    &::before{
+        color: $green;
+        font-size: 24px;
+        position: absolute;
+        left: 0;
+    }
+}
+
+.contacts__info-contant{
+    padding-left: 40px;
+    color: #707070;
+    max-width: 250px;
+}
+
+.contacts__form-title{
+    font-size: 24px;
+    color: #333;
+    @include f500;
+    margin-bottom: 20px;
+}
+
+.contacts__form-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts__form{
+    width: 100%;
+    input{
+        border: none;
+        height: 43px;
+        width: 350px;
+        padding-left: 17px;
+        padding-right: 17px;
+        background-color: #f1f4f5;
+        margin-bottom: 30px;
+        &::placeholder{
+            color: #7a7a7a;
+            font-size: 15px;
+        }
+    }
+    textarea{
+        border: none;
+        padding: 13px 17px;
+        height: 190px;
+        width: 100%;
+        display: block;
+        background-color: #f1f4f5;
+        margin-bottom: 23px;
+        resize: none;
+        &::placeholder{
+            color: #7a7a7a;
+            font-size: 15px;
+        }
+    }
+    button{
+        border: none;
+        color: #fff;
+        background-color: $green;
+        text-transform: uppercase;
+        text-align: center;
+        @include f700;
+        padding: 20px 5px; 
+        width: 190px;
+    }
+}
+
+
 @import 'media';
