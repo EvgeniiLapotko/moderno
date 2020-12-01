@@ -25,5 +25,8 @@
     "normalize.css": "^8.0.1",
     "rateyo": "^3.0.0-alpha.2",
     "slick-carousel": "^1.8.1"
+  },
+  "dependencies": {
+    "jquery-form-styler": "^2.0.2"
   }
 }
