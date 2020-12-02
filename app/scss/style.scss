@@ -1997,4 +1997,153 @@
 }
 
 
+// withdrawals
+
+.withdrawals__inner{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 110px;
+}
+
+.withdrawals__col{
+    max-width: 570px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #d7d7d7;
+    height: 100%;
+}
+
+.withdrawals__box-title{
+    font-size: 24px;
+    color: $bg;
+    padding: 18px 22px 24px;
+    border-bottom: 1px solid #d7d7d7;
+    margin-bottom: 30px;
+    @include f500;
+}
+
+.withdrawals__box-content{
+    padding-left: 35px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    button{
+        margin-bottom: 40px;
+        color: #fff;
+        background-color: $green;
+        border: none;
+        padding: 15px 36px;
+        cursor: pointer;
+    }
+}
+
+.withdrawals__form-line{
+    margin-bottom: 25px;
+    label{
+        display: block;
+        width: 100%;
+        @include f500;
+        font-size: 16px;
+        margin-bottom: 15px;
+        color: $bg;
+        span{
+            color: $green;
+        }
+    }
+    input{
+        width: 100%;
+        display: block;
+        border: 1px solid #d7d7d7;
+        outline: none;
+        height: 40px;
+        background-color: #f9f9f9;
+        padding: 0px 18px;
+        &::placeholder{
+            color: #707070;
+        }
+    }
+    select{
+        width: 100%;
+        display: block;
+        border: 1px solid #d7d7d7;
+        outline: none;
+        height: 40px;
+        background-color: #f9f9f9;
+        padding: 0px 18px;
+    }
+    .jq-selectbox{
+        width: 100%;
+    }
+    .jq-selectbox__select{
+        height: 40px;
+        padding: 0 18px;
+        border: 1px solid #d7d7d7;
+        border-bottom-color: #d7d7d7;
+        border-radius: 0;
+        background: #f9f9f9;
+        box-shadow: none;
+        text-shadow: none;
+        color: #707070;
+        font-family: 'Roboto-Regular', sans-serif ;
+        line-height: 40px;
+    }
+    .jq-selectbox__trigger-arrow{
+        border: none;
+        &::before{
+            content: '\f0d7';
+            font-family: 'icomoon';
+            font-size: 15px;
+            color: $bg;
+            line-height: 40px;
+            position: absolute;
+            right: 0;
+            top: -12px;
+        }
+    }
+    .jq-selectbox__trigger{
+        border-left: none;
+    }
+}
+
+.withdrawals__content-items{
+    padding-bottom: 35px;
+}
+
+.withdrawals__content-item{
+    display: flex;
+    height: 42px;
+    align-items: center;
+    color: #444;
+    font-size: 13px;
+    @include f500;
+    &:nth-child(odd){
+        background-color: #f9f9f9;
+    }
+}
+
+.withdrawals__content-date{
+    width: 154px;
+    padding-left: 20px;
+}
+
+.withdrawals__content-mail{
+    width: 180px;
+}
+
+.withdrawals__content-price{
+    width: 70px;
+    @include f700;
+}
+
+.withdrawals__content-status{
+    width: 88px;
+    @include f700;
+    &.withdrawals__content-paid{
+        color: $green;
+    }
+
+}
+
+
+
+
 @import 'media';

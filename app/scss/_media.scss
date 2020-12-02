@@ -1,3 +1,23 @@
+@media (max-width: 1200px){
+    .withdrawals__inner{
+        display: block;
+    }
+    .withdrawals__col{
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .withdrawals__content-item{
+        max-width: 490px;
+    }
+    .contacts__form-row{
+        display: block;
+        input{
+            width: 100%;
+        }
+    }
+}
+
+
 @media (max-width: 1100px){
     .footer__inner{
         flex-wrap: wrap;
@@ -8,6 +28,29 @@
     }
     .header__text{
         display: none;
+    }
+}
+
+@media (max-width: 1020px){
+    .settings-profile .product-one__tabs.settings__tabs{
+        display: block;
+        & .tabs{
+            margin-bottom: 20px;
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: 960px){
+    .page404__404::after {
+        content: '';
+        position: absolute;
+        background-image: url(../img/content/dude.png);
+        width: 50px;
+        height: 97px;
+        margin-left: 15px;
+        top: 35px;
+        background-size: cover;
     }
 }
 
@@ -47,6 +90,27 @@
           }  
         }
     }
+
+    .contacts__box{
+        display: block;
+    }
+
+    .profile__inner{
+        flex-direction: column;
+    }
+    .profile__content{
+        order: -1;
+        margin-bottom: 30px;
+    }
+    .profile__aside{
+        max-width: 100%;
+        margin-right: 0;
+    }
+    .profile__aside-btn a {
+        display: block;
+        max-width: 300px;
+        
+    }
 }
 
 @media (max-width: 800px){
@@ -59,6 +123,39 @@
     .footer__inner{
         justify-content: space-around;
     }
+
+    .upload__line{
+        display: block;
+        label{
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+    }
+    .upload__content{
+        button{
+            margin-left: 0;
+        }
+    }
+}
+
+@media (max-width: 740px){
+    .page404__404{
+        font-size: 200px;
+        line-height: 200px;
+    }
+    .page404__title{
+        font-size: 24px;
+        margin-bottom: 20px;
+        line-height: 30px;
+    }
+    .page404__text{
+        font-size: 15px;
+        margin-bottom: 40px;
+        padding: 0 20px;
+    }
+    .page404__link {
+        padding: 8px 30px;
+    }
 }
 
 @media (max-width: 640px){
@@ -70,7 +167,101 @@
     }
 }
 
+@media (max-width: 600px){
+    .page404__inner{
+        padding: 0 15px;
+    }
+    .page404__404{
+        font-size: 120px;
+        line-height: 120px;
+    }
+    .page404__404::after {
+        content: '';
+        position: absolute;
+        background-image: url(../img/content/dude.png);
+        width: 50px;
+        height: 97px;
+        margin-left: 0;
+        top: 16px;
+        right: 0;
+        background-size: cover;
+    }
+
+    .upload__content{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .upload__title{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .settings__line{
+        display: block;
+        label{
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+    }
+    .page-box__content{
+        padding: 20px 10px;
+    }
+
+    .page-box__title{
+        padding: 18px 10px;
+    }
+
+    .contacts__inner {
+        padding: 35px 10px 15px;
+    }
+
+    .contacts__head {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .container {
+        padding: 0 8px;
+    }
+
+    .contacts__map iframe {
+        width: 100%;
+        height: 300px;
+    }
+    
+    .profile__baner-img {
+        min-height: 240px;
+    }
+    .profile__items{
+        display: block;
+    }
+    .profile__item{
+        width: 100%;
+    }
+    .profile__item + .profile__item {
+        border-top: 1px solid #dedede;
+        border-left: none;
+    }
+    .profile__baner{
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    .personal-box {
+        padding: 35px 10px 25px;
+    }
+}
+
 @media (max-width: 540px){
+    .withdrawals__box-content{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .withdrawals__content-items{
+        overflow-x: scroll;
+    }
+    .withdrawals__content-item{
+        min-width: 490px;
+    }
     .footer__col{
         min-width: 100%;
     }
@@ -148,6 +339,12 @@
     }
     .user{
         margin-top: 7px;
+    }
+    .about__head{
+        padding: 23px 10px;
+    }
+    .about__inner{
+        padding: 0 10px;
     }
 }
 
