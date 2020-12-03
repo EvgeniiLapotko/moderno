@@ -1,4 +1,30 @@
+@media (max-width: 1900px){
+    .products-slider__inner{
+        text-align: center;
+    }
+    .products__item-category{
+        text-align: left;
+    }
+}
+
+@media (max-width: 1441px){
+    .products-slider__inner{
+        .products__item{
+            max-width: 500px;
+        }
+    }
+    .tutorial__item{
+        padding: 0 5px;
+    }
+}
+
 @media (max-width: 1200px){
+    .products-slider__inner{
+        .products__item{
+            max-width: 350px;
+        }
+    }
+
     .withdrawals__inner{
         display: block;
     }
@@ -15,6 +41,13 @@
             width: 100%;
         }
     }
+    .productmini{
+        max-width: 47%;
+    }
+
+    .products .products__item{
+      flex-basis: calc(33.333% - 30px);  
+    }
 }
 
 
@@ -28,6 +61,27 @@
     }
     .header__text{
         display: none;
+    }
+
+    .product-one__inner{
+        display: block;
+    }
+
+    .product-one__content {
+        margin-right: 0;
+        max-width: 100%;
+    }
+    .product-one__img{
+        max-width: 100%;
+    }
+
+    .products__item-img {
+        min-height: 215px;
+    }
+
+    .products .products__item{
+      flex-basis: calc(50% - 30px);
+      max-width: 100% 
     }
 }
 
@@ -55,6 +109,21 @@
 }
 
 @media (max-width: 900px){
+    .tutorial__inner{
+        margin-left: -20px;
+        flex-wrap: wrap;
+    }
+    .tutorial__item{
+        padding: 0;
+        margin-left: 20px;
+        max-width: 100%;
+        flex-basis: calc(50% -20px);
+        margin-bottom: 20px;
+    }
+    .search__inner-title {
+        font-size: 35px;
+        line-height: 40px;
+    }
     .menu__list{
         display: none;
         background-color: $bg;
@@ -111,6 +180,30 @@
         max-width: 300px;
         
     }
+
+    .chooice__inner{
+        display: block;
+    }
+
+    .chooice__item{
+        margin-bottom: 30px;
+        max-width: 100%;
+    }
+
+    .author{
+        min-height: 450px;
+    }
+
+    .author__inner{
+        display: block;
+        padding: 50px 15px;
+        text-align: center;
+    }
+
+    .author__inner-text{
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 800px){
@@ -136,6 +229,19 @@
             margin-left: 0;
         }
     }
+
+    .product-one__box {
+        display: block;
+    }
+    .product-one__link{
+        margin-bottom: 20px;
+    }
+
+    .products-slider__inner{
+        .products__item{
+            max-width: 100%;
+        }
+    }
 }
 
 @media (max-width: 740px){
@@ -155,6 +261,31 @@
     }
     .page404__link {
         padding: 8px 30px;
+    }
+
+    .products .products__item{
+      flex-basis: 100% 
+    }
+}
+
+@media (max-width: 670px){
+    .products__inner-btn{
+        button{
+            width: 100%;
+            &+button{
+                margin-left: 0;
+            }
+        }
+    }
+    .products{
+        padding: 50px 0px;
+    }
+    .title{
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .products-slider{
+        padding: 50px 0;
     }
 }
 
@@ -249,6 +380,43 @@
     .personal-box {
         padding: 35px 10px 25px;
     }
+
+    .productmini{
+        max-width: 100%;
+    }
+
+    .product-one__tabs{
+        .tabs{
+            display: block;
+            .tab{
+                display: block;
+                & +.tab{
+                    border-top: 1px solid #d7d7d7;
+                    border-left: none;
+                }
+            }
+        }
+    }
+
+    .tab-item img{
+        width: 100%;
+    }
+    .tab_content {
+        
+        padding: 10px;
+    }
+
+    .product-one__img{
+        height: 220px;
+    }
+
+    .product-one__title {
+        font-size: 18px;
+    }
+
+    .product-one__text{
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 540px){
@@ -271,10 +439,23 @@
 }
 
 @media (max-width: 520px){
+    .login__wrapper button{
+        width: 100%;
+    }
+
+    .create-akk{
+        width: 100%;
+    }
+
+    .create-akk::before {
+        left: 15px;
+    }
+
     .header{
         overflow: hidden;
         
     }
+
     .header__btn-menu{
         display: block;
         width: 70px;
@@ -328,6 +509,18 @@
     .menu__list{
         top: 70px;
     }
+
+    .product-one__link{
+        a{
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            &+a{
+                margin-left: 0;
+            }
+        }
+
+    }
 }
 
 @media (max-width: 495px){
@@ -345,6 +538,10 @@
     }
     .about__inner{
         padding: 0 10px;
+    }
+
+    .breadcrumbs .breadcrumbs__inner .breadcrumbs__list {
+        flex-wrap: wrap;
     }
 }
 
